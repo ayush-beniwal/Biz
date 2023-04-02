@@ -1,0 +1,82 @@
+#heading h1{
+  font-weight: 600;
+  font-size: 4vw;
+  /* opacity:0.3; */
+}
+#heading h2{
+  font-weight: 600;
+  font-size: 3vw;
+  position:relative;
+  bottom: 2.5vw;
+}
+.eventName{
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: min-content;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+.event{
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  /* width: 80vw;  */
+  
+  align-items: center;
+  margin: 1rem auto;
+}
+
+/* .eventImg {
+  height: 80%;
+  width: 100vw;
+  min-width: 200px;
+} */
+
+.eventDesc{
+  
+  margin-left: 2vw;
+  margin-right: 2vw;
+  /* width:40vw; */
+  margin-top: 2vh;
+
+  text-align: justify;
+  
+}
+
+.space {
+  width: 10px;
+  visibility: hidden;
+}
+
+.EveImg {
+  /* height: 40vh; */
+  transition: all .2s ease-in-out;
+
+  width: 22vw;
+  min-width: 230px;
+}
+.EveImg:hover{
+  transform: scale(1.1);
+}
+/* .eve-link{
+  display: block;
+  box-sizing: content-box;
+} */
+.eve-link::after{
+  content: "";
+  position: absolute;
+  background-color:  rgb(248, 252, 203);
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: -9.5px;
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+.eve-link:hover::after{
+  width: 100%;
+}
+
